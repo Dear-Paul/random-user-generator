@@ -84,7 +84,7 @@ const UsersPage = () => {
 
     useEffect(() => {
         fetchUsersData()
-    }, [filterValue]);
+    }, [filterValue, fetchUsersData]);
 
     useEffect(() => {
         if (previous !== userList) {
@@ -97,7 +97,7 @@ const UsersPage = () => {
         if (debouncedValue) {
             handleSearchUser(debouncedValue)
         }
-    }, [debouncedValue])
+    }, [debouncedValue, handleSearchUser])
 
     return (
         <Layout>

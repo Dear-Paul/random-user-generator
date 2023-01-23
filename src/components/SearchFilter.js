@@ -1,4 +1,3 @@
-import { useState } from "react";
 import FilterTab from "./FilterTab";
 
 const SearchFilter = ({searchUser, handleUserInput, handleFilter}) => {
