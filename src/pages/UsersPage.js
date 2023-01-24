@@ -90,14 +90,14 @@ const UsersPage = () => {
         if (previous !== userList) {
             setItemsToDisplay(sliced)
         }
-
     }, [previous, sliced, userList]);
 
     useEffect(() => {
         if (debouncedValue) {
             handleSearchUser(debouncedValue)
         }
-    }, [debouncedValue, handleSearchUser])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [debouncedValue])
 
     return (
         <Layout>
