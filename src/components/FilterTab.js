@@ -8,19 +8,19 @@ const FILTERS = [
         title: "All users",
         icon: groupIcon,
         value: "all",
-        className: "bg-rose-400 hover:bg-rose-700"
+        className: "bg-rose-400 active:bg-rose-900"
     },
     {
         title: "Male users",
         icon: maleIcon,
         value: "male",
-        className: "bg-teal-300 hover:bg-teal-700"
+        className: "bg-teal-300 active:bg-teal-900"
     },
     {
         title: "Female users",
         icon: womanIcon,
         value: "female",
-        className: "bg-violet-500 hover:bg-violet-700"
+        className: "bg-violet-500 active:bg-violet-900"
     }
 ]
 
