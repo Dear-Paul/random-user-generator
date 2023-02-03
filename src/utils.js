@@ -57,7 +57,7 @@ export const exportToCsv = (items) => {
     let headers = ["gender,name.title,name.first,name.last,email,dob.date,dob.age,nationality,picture.large,picture.medium,picture.thumbnail,registered.date,location.street.number,location.street.name,location.city,location.state,location.country"];
     let usersCsv = items.reduce((acc, user) => {
         const {gender, name, email, registered, dob, nat, picture, location} = user;
-        acc.push([gender, name.title, name.first, name.last, email, dob.date, dob.age, nat, picture.large,  picture.mddium,  picture.thumbnail, registered.date,  location.street.number, location.street.name, location.city, location.state, location.country]);
+        acc.push([gender, name.title, name.first, name.last, email, dob.date, dob.age, nat, picture.large,  picture.medium,  picture.thumbnail, registered.date,  location.street.number, location.street.name, location.city, location.state, location.country]);
         return acc
     }, [])
 

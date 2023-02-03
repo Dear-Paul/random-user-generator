@@ -1,13 +1,16 @@
 const UserCardDetails = ({ showCountry, toggleCard, userDetails }) => {
     return (
         <div className={`md:h-[280px] w-[100%] flex flex-col  my-4 p-5`}>
+            <div className="flex items-center justify-center xl:justify-start">
             <button className="flex flex-row items-center justify-center text-teal-500  w-[120px] gap-2 hover:bg-slate-300 rounded-lg"  onClick={toggleCard}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />
                 </svg>
 
-                <span className=" font-medium text-sm text-black">RESULTS</span>
+                <span className=" font-medium text-sm text-black ">RESULTS</span>
             </button>
+            </div>
+            
             <div className="md:flex flex-row w-[100%] mt-5">
                 <div className="w-[40%]">
                     <div className="rounded-[50%] h-[180px] w-[180px] border-8 border-teal-300">

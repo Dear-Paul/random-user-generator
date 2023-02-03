@@ -26,8 +26,8 @@ const FILTERS = [
 
 const FilterTab = ({ handleFilter }) => {
     return (
-        <div className="md:relative">
-            <div className="flex flex-col absolute justify-between  m-[12px]  md:flex-row gap-[65px] ">
+        <div className="w-[95%] md:relative">
+            <div className="w-[90%] m-auto flex flex-col  justify-between md:flex-row gap-[65px] ">
                 {FILTERS.map((filter) => (
                     <FilterItem filter={filter} handleFilter={handleFilter} />
                 ))}

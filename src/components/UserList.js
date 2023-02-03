@@ -38,11 +38,11 @@ const UserList = ({ itemsToDisplay, onPrev, onNext, searchUser, handleUserInput 
         setCountry(country.name)
     }
     return (
-        <div className="md:w-[50%] text-white">
-            <div className="w-[100%] relative m-auto  h-[100%]">
-                <div className="absolute flex flex-col lg:w-11/12  p-[22px] box-border bg-slate-100 min-h-[300px] text-black rounded-[20px] -mt-[26rem] overflow-hidden">
-                    <h3 className="text-2xl font-bold mt-[40px]">{showDetailsCard ? "User List" : "All Users"}</h3>
-                    <h6 className="mb-[16px] text-xs">Filter by</h6>
+        <div className="min-h-[300px] w-screen xl:w-[50%] xl:pt-28 text-white">
+            <div className="w-[100%] relative  h-[100%] ">
+                <div className="flex flex-col min-h-[300px] m-auto xl:w-[95%]  p-[22px] box-border bg-slate-100  text-black rounded-[20px]  overflow-hidden">
+                    <h3 className="text-center text-2xl font-bold mt-[40px] xl:text-left">{showDetailsCard ? "User List" : "All Users"}</h3>
+                    <h6 className="mb-[16px] text-center text-xs xl:text-left">Filter by</h6>
                     <div className="flex flex-row items-center justify-between px-3">
                         <div className="min-h-[48px] w-[40%] p-0 relative ">
                             <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
