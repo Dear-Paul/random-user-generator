@@ -1,5 +1,5 @@
-import { render, fireEvent, screen } from "@testing-library/react";
-import UserList from "./UserList";
+import { render,  screen } from "@testing-library/react";
+import UserList from "../UserList";
 
 
 test("user action", () => {
